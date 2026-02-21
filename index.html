@@ -149,12 +149,12 @@
   <div class="cursor-ring" id="cursorRing"></div>
 
   <nav>
-    <a href="#"><img src="https://github.com/MrSourV/zentry-website/blob/main/download%20(3).png?raw=true" style="height:52px;width:auto;" /></a>
+    <a href="#" class="nav-logo">ZENTRY</a>
     <ul class="nav-links">
       <li><a href="#how">How It Works</a></li>
       <li><a href="#features">Features</a></li>
       <li><a href="#commands">Commands</a></li>
-      <li><a href="https://discord.com/oauth2/authorize?client_id=1471927141934432599&permissions=8&integration_type=0&scope=bot" class="btn-nav">Add to Server</a></li>
+      <li><a href="https://discord.com/oauth2/authorize?client_id=YOUR_CLIENT_ID&permissions=8&scope=bot+applications.commands" class="btn-nav">Add to Server</a></li>
     </ul>
   </nav>
 
@@ -173,7 +173,7 @@
       </h1>
       <p class="hero-sub">Zentry seamlessly links your community's Discord and Roblox accounts — with built-in alt detection, ban sync, and real-time account insights.</p>
       <div class="hero-cta">
-        <a href="https://discord.com/oauth2/authorize?client_id=1471927141934432599&permissions=8&integration_type=0&scope=bot" class="btn-primary">
+        <a href="https://discord.com/oauth2/authorize?client_id=YOUR_CLIENT_ID&permissions=8&scope=bot+applications.commands" class="btn-primary">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057c.003.024.015.044.03.055a19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03z"/></svg>
           Add to Discord
         </a>
@@ -187,7 +187,7 @@
     <div class="stats-grid">
       <div class="stat-item"><div class="stat-num">100%</div><div class="stat-label">FREE TO USE</div></div>
       <div class="stat-item"><div class="stat-num">24/7</div><div class="stat-label">UPTIME</div></div>
-      <div class="stat-item"><div class="stat-num">8</div><div class="stat-label">SLASH COMMANDS</div></div>
+      <div class="stat-item"><div class="stat-num">19</div><div class="stat-label">SLASH COMMANDS</div></div>
       <div class="stat-item"><div class="stat-num">&lt;1s</div><div class="stat-label">VERIFY TIME</div></div>
     </div>
   </section>
@@ -212,7 +212,7 @@
         <div class="mock-divider"></div>
         <div class="mock-label">VERIFICATION CODE</div>
         <div class="mock-input">A3F2B1C9</div>
-       <!-- <div class="mock-status">Discord: <strong style="color:white">john_doe</strong> — Is this you?</div> --> 
+        <div class="mock-status">Discord: <strong style="color:white">john_doe</strong> — Is this you?</div>
         <button class="mock-btn">IS THIS YOU?</button>
         <div class="mock-footer">🔒 Your code was sent via Discord DM<br/>Do not share it with anyone</div>
       </div>
@@ -243,13 +243,24 @@
         <p class="section-sub">Eight slash commands covering setup, moderation, and account management.</p>
         <div class="command-list">
           <div class="command-item"><span class="cmd-tag">/setup</span><div class="cmd-info"><h4>Configure the bot</h4><p>Set verified role, unverified role, log channel and more</p></div><span class="cmd-badge">Admin</span></div>
-          <div class="command-item"><span class="cmd-tag">/verify</span><div class="cmd-info"><h4>Start verification</h4><p>Sends a code to your DMs to begin linking accounts</p></div></div>
+          <div class="command-item"><span class="cmd-tag">/config</span><div class="cmd-info"><h4>View configuration</h4><p>See the current bot settings for your server</p></div><span class="cmd-badge">Admin</span></div>
+          <div class="command-item"><span class="cmd-tag">/verify</span><div class="cmd-info"><h4>Start verification</h4><p>Sends a unique one-time code to your DMs to begin linking accounts</p></div></div>
           <div class="command-item"><span class="cmd-tag">/reverify</span><div class="cmd-info"><h4>Switch Roblox account</h4><p>Re-link your Discord to a different Roblox account</p></div></div>
-          <div class="command-item"><span class="cmd-tag">/whois</span><div class="cmd-info"><h4>Look up a user</h4><p>See which Roblox account is linked to a Discord user</p></div></div>
-          <div class="command-item"><span class="cmd-tag">/robloxinfo</span><div class="cmd-info"><h4>Account insights</h4><p>Detailed Roblox profile stats and suspicious flags</p></div></div>
-          <div class="command-item"><span class="cmd-tag">/bansync</span><div class="cmd-info"><h4>View ban list</h4><p>See all Roblox accounts blocked from verifying</p></div><span class="cmd-badge">Admin</span></div>
-          <div class="command-item"><span class="cmd-tag">/verifiedcount</span><div class="cmd-info"><h4>Server stats</h4><p>How many members are verified vs total</p></div></div>
+          <div class="command-item"><span class="cmd-tag">/verifyall</span><div class="cmd-info"><h4>Mass verify</h4><p>Re-send verification DMs to all unverified members at once</p></div><span class="cmd-badge">Admin</span></div>
           <div class="command-item"><span class="cmd-tag">/unverify</span><div class="cmd-info"><h4>Remove verification</h4><p>Unlink a user's Roblox account and remove their role</p></div><span class="cmd-badge">Admin</span></div>
+          <div class="command-item"><span class="cmd-tag">/whois</span><div class="cmd-info"><h4>Look up a user</h4><p>See which Roblox account is linked to a Discord user</p></div></div>
+          <div class="command-item"><span class="cmd-tag">/findroblox</span><div class="cmd-info"><h4>Reverse lookup</h4><p>Find a Discord user by searching their Roblox username</p></div></div>
+          <div class="command-item"><span class="cmd-tag">/profile</span><div class="cmd-info"><h4>Full profile card</h4><p>Combined Discord + Roblox profile with avatar, bio, age, and flags</p></div></div>
+          <div class="command-item"><span class="cmd-tag">/robloxinfo</span><div class="cmd-info"><h4>Account insights</h4><p>Detailed Roblox stats — friends, followers, age, ban status and flags</p></div></div>
+          <div class="command-item"><span class="cmd-tag">/age</span><div class="cmd-info"><h4>Account age</h4><p>Quickly check how old a verified user's Roblox account is</p></div></div>
+          <div class="command-item"><span class="cmd-tag">/alts</span><div class="cmd-info"><h4>Alt detection</h4><p>Check if multiple Discord accounts share the same Roblox ID</p></div></div>
+          <div class="command-item"><span class="cmd-tag">/verifiedcount</span><div class="cmd-info"><h4>Server stats</h4><p>Verified vs total members with a visual progress bar</p></div></div>
+          <div class="command-item"><span class="cmd-tag">/bansync</span><div class="cmd-info"><h4>View ban list</h4><p>See all Roblox accounts blacklisted from verifying</p></div><span class="cmd-badge">Admin</span></div>
+          <div class="command-item"><span class="cmd-tag">/robloxban</span><div class="cmd-info"><h4>Ban by Roblox username</h4><p>Blacklist a Roblox account even if they've never joined the server</p></div><span class="cmd-badge">Admin</span></div>
+          <div class="command-item"><span class="cmd-tag">/embed</span><div class="cmd-info"><h4>Custom embed</h4><p>Send a fully custom embedded message to any channel with color, image and role ping</p></div><span class="cmd-badge">Admin</span></div>
+          <div class="command-item"><span class="cmd-tag">/announce</span><div class="cmd-info"><h4>Announcements</h4><p>Send a styled announcement embed to any channel with an optional role ping</p></div><span class="cmd-badge">Admin</span></div>
+          <div class="command-item"><span class="cmd-tag">/dm</span><div class="cmd-info"><h4>Direct message</h4><p>Send a DM to any server member directly through Zentry</p></div><span class="cmd-badge">Admin</span></div>
+          <div class="command-item"><span class="cmd-tag">/game</span><div class="cmd-info"><h4>Game link</h4><p>Post the Zentry verification game link as a clean embed anyone can see</p></div></div>
         </div>
       </div>
       <div class="discord-mock">
@@ -292,7 +303,7 @@
       <h2 class="cta-title">Ready to secure<br/><span class="gradient-text">your community?</span></h2>
       <p class="cta-sub">Add Zentry to your server in seconds. Free forever, no strings attached.</p>
       <div class="cta-btns">
-        <a href="https://discord.com/oauth2/authorize?client_id=1471927141934432599&permissions=8&integration_type=0&scope=bot" class="btn-primary">
+        <a href="https://discord.com/oauth2/authorize?client_id=YOUR_CLIENT_ID&permissions=8&scope=bot+applications.commands" class="btn-primary">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057c.003.024.015.044.03.055a19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03z"/></svg>
           Add to Discord — Free
         </a>
